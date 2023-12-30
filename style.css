@@ -89,6 +89,10 @@ header {
 	height: auto;
 }
 
+.projectImage:hover {
+	cursor: pointer;
+}
+
 .projectInfo {
 	position: relative;
 	width: 300px;
