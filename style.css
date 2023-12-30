@@ -2,7 +2,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	border: 1px solid red;
 }
 
 body {
@@ -16,19 +15,31 @@ header {
 	color: white;
 	top: 25px;
 	width: 100%;
+	z-index: 2;
 }
 
 .headerBtn {
 	color: inherit;
 	text-decoration: inherit;
+	font-size: 25px;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 5px;
+}
+
+.headerBtn:active,
+.headerBtn:hover {
+	color: black;
+	background-color: white;
 }
 
 #about {
-	padding-top: 50px;
+	padding-top: 75px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
+	gap: 10%;
+	padding-bottom: 50px;
 }
 
 .aboutPhoto {
@@ -37,13 +48,15 @@ header {
 }
 
 .aboutText {
+	font-size: 25px;
 	max-width: 600px;
+	margin: 10px;
 }
 
 #projects {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-	gap: 50px;
+	gap: 25px;
 }
 
 @media (max-width: 600px) {
@@ -53,8 +66,8 @@ header {
 	.projectCard {
 		flex-wrap: wrap;
 		width: 100%;
-	}
-	.projectInfo {
+		justify-content: center;
+		align-items: center;
 	}
 }
 
@@ -63,9 +76,11 @@ header {
 	justify-self: center;
 	padding: 10px;
 	display: flex;
-	margin-top: 50px;
-	background-color: black;
-	color: white;
+	margin-top: 20px;
+	background-color: white;
+	color: black;
+	/* border-left: 15px solid black; */
+	box-shadow: 0 29px 52px rgba(0, 0, 0, 0.4), 0 25px 16px rgba(0, 0, 0, 0.2);
 }
 
 .projectImage {
@@ -75,12 +90,52 @@ header {
 }
 
 .projectInfo {
+	position: relative;
 	width: 300px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	padding: 40px;
 }
 
 .projectLinks {
-	margin-left: 66%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: fit-content;
+	display: flex;
+}
+
+.liveBtn {
+	background-image: url('./images/9042799_open_in_window_icon.png');
+}
+
+.gitBtn {
+	background-image: url('./images/git.png');
+}
+
+.liveBtn,
+.gitBtn {
+	background-size: 30px;
+	background-position: center;
+	width: 30px;
+	aspect-ratio: 1;
+}
+
+#contact {
+	padding: 100px 100px 50px 100px;
+	align-items: center;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+.contactTitle {
+	font-size: 25px;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.contactInfo {
+	font-size: 25px;
 }
