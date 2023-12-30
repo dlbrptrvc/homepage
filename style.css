@@ -69,6 +69,10 @@ header {
 		justify-content: center;
 		align-items: center;
 	}
+	#contact {
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 .projectCard {
