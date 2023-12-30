@@ -73,6 +73,16 @@ header {
 		align-items: center;
 		justify-content: center;
 	}
+	.headerBtn {
+		font-size: 20px;
+		width: 30%;
+		text-align: center;
+	}
+	header {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
 }
 
 .projectCard {
@@ -131,7 +141,7 @@ header {
 }
 
 #contact {
-	padding: 100px 100px 50px 100px;
+	padding: 75px 75px 25px 75px;
 	align-items: center;
 	display: flex;
 	align-items: flex-end;
